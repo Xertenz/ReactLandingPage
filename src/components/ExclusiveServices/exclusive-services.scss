@@ -1,0 +1,28 @@
+.exclusive-services {
+  padding: 6rem 0;
+  text-align: center;
+  background-color: rgb(14, 31, 31);
+  .container {
+    .wrapper {
+      width: 660px;
+      max-width: 100%;
+      margin: 0 auto;
+      .sub-title {
+        font-weight: normal;
+      }
+      .title,
+      .text {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      .title {
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      button {
+        border: none;
+      }
+    }
+  }
+}

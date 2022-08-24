@@ -1,0 +1,29 @@
+.numbers {
+  background-color: var(--primary-color);
+  padding: 5rem 0;
+  .container {
+    .wrapper {
+      .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        color: #fff;
+        .item {
+          .title {
+            font-size: 2rem;
+          }
+          .text {
+            text-transform: uppercase;
+          }
+        }
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 3.5rem;
+        }
+        @media (max-width: 575px) {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

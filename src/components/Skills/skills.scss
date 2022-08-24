@@ -1,0 +1,94 @@
+.skills {
+  padding: 6rem 0;
+  .container {
+    .wrapper {
+      .title-part {
+        text-align: center;
+        margin-bottom: 4rem;
+        .title {
+          text-transform: capitalize;
+        }
+      }
+      .details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        > div {
+          width: 50%;
+        }
+        .techs {
+          .tech {
+            margin: 0 1rem;
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+            .text {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: row;
+              .tech-name {
+                text-transform: uppercase;
+                font-size: 1.25rem;
+              }
+            }
+            .bar {
+              height: 12px;
+              background-color: #bbb;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background-color: var(--primary-color);
+              }
+              &,
+              &::after {
+                border-radius: 6px;
+              }
+            }
+            &:first-child .bar::after {
+              width: 70%;
+            }
+            &:nth-child(2) .bar::after {
+              width: 80%;
+            }
+            &:nth-child(3) .bar::after {
+              width: 90%;
+            }
+            &:nth-child(4) .bar::after {
+              width: 70%;
+            }
+          }
+        }
+        .about-me-details {
+          .title {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+          }
+          .text {
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+          }
+          .btn {
+            text-transform: capitalize;
+          }
+        }
+        @media (max-width: 768px) {
+          flex-direction: column-reverse;
+          > div {
+            width: 100%;
+          }
+          .about-me-details {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

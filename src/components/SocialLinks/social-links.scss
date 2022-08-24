@@ -1,0 +1,38 @@
+.social-links {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    li {
+      a {
+        font-size: 1.5rem;
+        transition: color 0.12s ease;
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        transition: border 0.15s ease;
+        &:hover {
+          border-color: var(--primary-color);
+        }
+      }
+      &:first-child a {
+        color: #4267b2;
+      }
+      &:nth-child(2) a {
+        color: #211f1f;
+      }
+      &:nth-child(3) a {
+        color: #ff0000;
+      }
+      &:nth-child(4) a {
+        color: #1da1f2;
+      }
+    }
+  }
+}

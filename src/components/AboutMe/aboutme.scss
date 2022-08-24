@@ -1,0 +1,44 @@
+.about-me {
+  padding: 4rem 0;
+  .container {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      > div {
+        width: 50%;
+      }
+      .info {
+        .title {
+          font-size: 2rem;
+          text-transform: capitalize;
+          margin-bottom: 1.5rem;
+        }
+        .description {
+          margin-bottom: 1.5rem;
+          color: #888;
+        }
+      }
+      .image {
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+      @media (max-width: 991px) {
+        .image {
+          img {
+            width: 95%;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 3rem;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
