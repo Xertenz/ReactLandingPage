@@ -1,7 +1,7 @@
 import React from "react";
 import "./../../assets/logo.png";
 import "./header.scss";
-import Img from "./../../assets/header_person.png";
+import Img from "./../../assets/man.png";
 import Button from "../Button/Button";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import { useEffect } from "react";

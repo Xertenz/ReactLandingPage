@@ -15,6 +15,13 @@ header {
       .person-img {
         width: 100%;
       }
+      @media (min-width: 1200px) {
+        align-items: center;
+        .person-img {
+          height: 100%;
+          width: auto;
+        }
+      }
     }
     .person-info {
       display: flex;
